@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/edName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name" />
+
+        <EditText
+            android:id="@+id/edAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Age" />
+
+        <EditText
+            android:id="@+id/edSkill"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Skill" />
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add"
+            android:textAllCaps="false" />
+
+        <TextView
+            android:id="@+id/tvResultRead"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="Result: " />
+
+        <Button
+            android:id="@+id/btnRead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Read"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update"
+            android:textAllCaps="false" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tvFilterByAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Result: " />
+
+        <Button
+            android:id="@+id/btnFilterByAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Employee Over 25"
+            android:textAllCaps="false" />
+
+        <TextView
+            android:id="@+id/tvFilterBySkill"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Result: " />
+
+        <Button
+            android:id="@+id/btnDeleteByName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete By Name"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btnDeleteAllWithSkill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete all with skil"
+            android:textAllCaps="false" />
+    </LinearLayout>
+
+
+</LinearLayout>
